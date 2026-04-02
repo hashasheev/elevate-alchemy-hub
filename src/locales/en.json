@@ -32,7 +32,8 @@
   },
   "contact": {
     "title": "DROP ME A\nMESSAGE.",
-    "button": "Email Me"
+    "whatsappButton": "WhatsApp Chat",
+    "emailButton": "Email Me"
   },
   "nav": {
     "about": "About",

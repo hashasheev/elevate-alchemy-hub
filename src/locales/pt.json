@@ -32,7 +32,8 @@
   },
   "contact": {
     "title": "ENTRE EM\nCONTATO.",
-    "button": "Enviar E-mail"
+    "whatsappButton": "Falar no WhatsApp",
+    "emailButton": "Enviar E-mail"
   },
   "nav": {
     "about": "Sobre",

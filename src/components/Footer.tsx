@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <footer className="px-6 md:px-16 lg:px-24 py-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-      <span className="text-sm text-muted-foreground font-medium">EA © 2024</span>
+      <span className="text-sm text-muted-foreground font-medium">EA © {new Date().getFullYear()}</span>
       <nav className="flex gap-6">
         {[
           { label: t("nav.about"), id: "about" },

@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const socials = [
-  { name: "X (Twitter)", href: "#" },
-  { name: "LinkedIn", href: "#" },
+  { name: "Behance", href: "#" },
   { name: "Instagram", href: "#" },
+  { name: "LinkedIn", href: "#" },
+  { name: "X (Twitter)", href: "#" },
 ];
 
 const ContactSection = () => {
@@ -28,12 +29,22 @@ const ContactSection = () => {
         transition={{ delay: 0.2 }}
         className="space-y-8"
       >
-        <a
-          href="mailto:contato@eversonalcantara.com"
-          className="inline-flex items-center justify-center border border-foreground text-foreground px-8 py-3 text-xs font-medium uppercase tracking-[0.2em] hover:bg-foreground hover:text-background transition-colors duration-200 rounded-sm"
-        >
-          {t("contact.button")}
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <a
+            href="https://wa.me/5511999999999" // TODO: Add real number
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center border border-foreground text-foreground px-8 py-3 text-xs font-medium uppercase tracking-[0.2em] hover:bg-foreground hover:text-background transition-colors duration-200 rounded-sm"
+          >
+            {t("contact.whatsappButton")}
+          </a>
+          <a
+            href="mailto:contato@eversonalcantara.com"
+            className="inline-flex items-center justify-center border border-foreground text-foreground px-8 py-3 text-xs font-medium uppercase tracking-[0.2em] hover:bg-foreground hover:text-background transition-colors duration-200 rounded-sm"
+          >
+            {t("contact.emailButton")}
+          </a>
+        </div>
 
         <div className="flex flex-col divide-y divide-border pt-8">
           {socials.map((s) => (

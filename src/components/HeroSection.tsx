@@ -10,9 +10,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9]"
         >
-          Everson
+          EVERSON
           <br />
-          Alcantara
+          ALCANTARA
         </motion.h1>
 
         <motion.div

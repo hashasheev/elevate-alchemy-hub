@@ -29,9 +29,9 @@ const SkillsSection = () => {
           <h2 className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-8">
             Skills
           </h2>
-          <ul className="space-y-4">
+          <ul className="divide-y divide-border">
             {skills.map((skill) => (
-              <li key={skill} className="text-lg md:text-xl font-medium">
+              <li key={skill} className="py-4 text-sm md:text-base font-medium text-foreground">
                 {skill}
               </li>
             ))}
@@ -47,9 +47,9 @@ const SkillsSection = () => {
           <h2 className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-8">
             Expertise Segments
           </h2>
-          <ul className="space-y-4">
+          <ul className="divide-y divide-border">
             {segments.map((seg) => (
-              <li key={seg} className="text-lg md:text-xl font-medium">
+              <li key={seg} className="py-4 text-sm md:text-base font-medium text-foreground">
                 {seg}
               </li>
             ))}

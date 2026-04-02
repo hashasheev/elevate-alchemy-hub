@@ -1,17 +1,18 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
 
-const projects = [
-  { title: "Integração de Dados Preditivos", category: "Fintech", year: "2023", image: project1 },
-  { title: "Automação de Conteúdo via IA", category: "SaaS", year: "2024", image: project2 },
-  { title: "Rebranding & Arquitetura Visual", category: "Varejo", year: "2023", image: project3 },
-  { title: "Campanha de Performance B2B", category: "Tecnologia", year: "2022", image: project4 },
-];
-
 const WorkSection = () => {
+  const { t } = useTranslation();
+
+  const works = (t("work.projects", { returnObjects: true }) as any[]).map((p, i) => {
+    const images = [project1, project2, project3, project4];
+    return { ...p, image: images[i] };
+  });
+
   return (
     <section id="work" className="px-6 md:px-16 lg:px-24 py-24 border-t border-border">
       <motion.h2
@@ -20,11 +21,11 @@ const WorkSection = () => {
         viewport={{ once: true }}
         className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-12"
       >
-        Projetos Selecionados
+        {t("work.title")}
       </motion.h2>
 
       <div className="grid md:grid-cols-2 gap-6">
-        {projects.map((project, i) => (
+         {works.map((project, i) => (
           <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 30 }}
@@ -45,7 +46,7 @@ const WorkSection = () => {
             </div>
             <h3 className="text-base font-semibold mb-1">{project.title}</h3>
             <p className="text-sm text-muted-foreground">
-              {project.category} • {project.year}
+              {project.category} • {project.year || "2023"}
             </p>
           </motion.div>
         ))}

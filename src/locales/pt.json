@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "subtitle": "Marketing & IA",
+    "description": "Publicitário com 10+ anos de experiência. Especialista em transformar desafios de marketing em resultados utilizando inteligência artificial. Foco em performance, estratégia clara e execução impecável para marcas que exigem excelência."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "list": [
+      "Estratégia de Marketing Digital",
+      "Implementação de IA Generativa",
+      "Análise de Dados Avançada",
+      "Gestão de Campanhas de Performance",
+      "Branding & Posicionamento"
+    ],
+    "segmentsTitle": "Frentes de Experiência",
+    "segmentsList": [
+      "Tecnologia & SaaS",
+      "Varejo & E-commerce",
+      "Setor Financeiro & Fintechs",
+      "Educação Superior",
+      "Saúde & Bem-estar"
+    ]
+  },
+  "work": {
+    "title": "Projetos Selecionados",
+    "projects": [
+      { "title": "Integração de Dados Preditivos", "category": "Fintech" },
+      { "title": "Automação de Conteúdo via IA", "category": "SaaS" },
+      { "title": "Rebranding & Arquitetura Visual", "category": "Varejo" },
+      { "title": "Campanha de Performance B2B", "category": "Tecnologia" }
+    ]
+  },
+  "contact": {
+    "title": "ENTRE EM\nCONTATO.",
+    "button": "Enviar E-mail"
+  },
+  "nav": {
+    "about": "Sobre",
+    "work": "Projetos",
+    "contact": "Contato"
+  }
+}

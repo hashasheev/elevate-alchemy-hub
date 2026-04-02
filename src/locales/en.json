@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "subtitle": "Marketing & AI",
+    "description": "Advertising professional with 10+ years of experience. Specialist in transforming marketing challenges into results using generative Artificial Intelligence. Focus on performance, clear strategy, and flawless execution for brands that demand excellence."
+  },
+  "skills": {
+    "title": "Skills",
+    "list": [
+      "Digital Marketing Strategy",
+      "Generative AI Implementation",
+      "Advanced Data Analytics",
+      "Performance Campaign Management",
+      "Branding & Positioning"
+    ],
+    "segmentsTitle": "Expertise Segments",
+    "segmentsList": [
+      "Technology & SaaS",
+      "Retail & E-commerce",
+      "Financial Sector & Fintechs",
+      "Higher Education",
+      "Health & Wellness"
+    ]
+  },
+  "work": {
+    "title": "Selected Work",
+    "projects": [
+      { "title": "Predictive Data Integration", "category": "Fintech" },
+      { "title": "AI Content Automation", "category": "SaaS" },
+      { "title": "Rebranding & Visual Architecture", "category": "Retail" },
+      { "title": "B2B Performance Campaign", "category": "Technology" }
+    ]
+  },
+  "contact": {
+    "title": "DROP ME A\nMESSAGE.",
+    "button": "Email Me"
+  },
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  }
+}

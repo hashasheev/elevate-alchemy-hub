@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-32">
       <div className="max-w-4xl">
@@ -22,7 +25,7 @@ const HeroSection = () => {
           className="mt-2 mb-8"
         >
           <span className="text-sm font-medium tracking-[0.3em] uppercase text-muted-foreground">
-            Marketing & IA
+            {t("hero.subtitle")}
           </span>
         </motion.div>
 
@@ -32,10 +35,7 @@ const HeroSection = () => {
           transition={{ delay: 0.6, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
         >
-          Publicitário com 10+ anos de experiência. Especialista em transformar
-          desafios de marketing em resultados utilizando inteligência artificial.
-          Foco em performance, estratégia clara e execução impecável para marcas
-          que exigem excelência.
+          {t("hero.description")}
         </motion.p>
       </div>
     </section>

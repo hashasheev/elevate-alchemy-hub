@@ -1,22 +1,12 @@
 import { motion } from "framer-motion";
-
-const skills = [
-  "Estratégia de Marketing Digital",
-  "Implementação de IA Generativa",
-  "Análise de Dados Avançada",
-  "Gestão de Campanhas de Performance",
-  "Branding & Posicionamento",
-];
-
-const segments = [
-  "Tecnologia & SaaS",
-  "Varejo & E-commerce",
-  "Setor Financeiro & Fintechs",
-  "Educação Superior",
-  "Saúde & Bem-estar",
-];
+import { useTranslation } from "react-i18next";
 
 const SkillsSection = () => {
+  const { t } = useTranslation();
+
+  const skills = t("skills.list", { returnObjects: true }) as string[];
+  const segments = t("skills.segmentsList", { returnObjects: true }) as string[];
+
   return (
     <section id="about" className="px-6 md:px-16 lg:px-24 py-24 border-t border-border">
       <div className="grid md:grid-cols-2 gap-16 max-w-6xl">
@@ -27,7 +17,7 @@ const SkillsSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-8">
-            Habilidades
+            {t("skills.title")}
           </h2>
           <ul className="divide-y divide-border">
             {skills.map((skill) => (
@@ -45,7 +35,7 @@ const SkillsSection = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
         >
           <h2 className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-8">
-            Frentes de Experiência
+            {t("skills.segmentsTitle")}
           </h2>
           <ul className="divide-y divide-border">
             {segments.map((seg) => (

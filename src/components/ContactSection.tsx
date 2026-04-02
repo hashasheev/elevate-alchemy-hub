@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const socials = [
   { name: "X (Twitter)", href: "#" },
@@ -7,17 +8,17 @@ const socials = [
 ];
 
 const ContactSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="px-6 md:px-16 lg:px-24 py-24 border-t border-border">
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] mb-12"
+        className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] mb-12 whitespace-pre-line"
       >
-        ENTRE EM
-        <br />
-        CONTATO.
+        {t("contact.title")}
       </motion.h2>
 
       <motion.div
@@ -31,7 +32,7 @@ const ContactSection = () => {
           href="mailto:contato@eversonalcantara.com"
           className="inline-flex items-center justify-center border border-foreground text-foreground px-8 py-3 text-xs font-medium uppercase tracking-[0.2em] hover:bg-foreground hover:text-background transition-colors duration-200 rounded-sm"
         >
-          Enviar E-mail
+          {t("contact.button")}
         </a>
 
         <div className="flex flex-col divide-y divide-border pt-8">

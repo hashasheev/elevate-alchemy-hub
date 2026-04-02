@@ -13,11 +13,11 @@ const ContactSection = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-4xl md:text-6xl font-bold tracking-tighter mb-12"
+        className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] mb-12"
       >
-        Drop me a
+        DROP ME A
         <br />
-        message.
+        MESSAGE.
       </motion.h2>
 
       <motion.div
@@ -29,22 +29,19 @@ const ContactSection = () => {
       >
         <a
           href="mailto:contato@eversonalcantara.com"
-          className="inline-flex items-center justify-center bg-foreground text-background px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] hover:opacity-80 transition-opacity duration-200 rounded-sm"
+          className="inline-flex items-center justify-center border border-foreground text-foreground px-8 py-3 text-xs font-medium uppercase tracking-[0.2em] hover:bg-foreground hover:text-background transition-colors duration-200 rounded-sm"
         >
           Email Me
         </a>
 
-        <div className="flex flex-wrap gap-6 pt-4">
+        <div className="flex flex-col divide-y divide-border pt-8">
           {socials.map((s) => (
             <a
               key={s.name}
               href={s.href}
-              className="group flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+              className="py-4 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              <span className="text-sm">{s.name}</span>
-              <span className="text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                Connect
-              </span>
+              {s.name}
             </a>
           ))}
         </div>

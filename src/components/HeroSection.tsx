@@ -22,7 +22,7 @@ const HeroSection = () => {
           className="mt-2 mb-8"
         >
           <span className="text-sm font-medium tracking-[0.3em] uppercase text-muted-foreground">
-            Marketing & AI
+            Marketing & IA
           </span>
         </motion.div>
 

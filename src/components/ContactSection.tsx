@@ -15,9 +15,9 @@ const ContactSection = () => {
         viewport={{ once: true }}
         className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] mb-12"
       >
-        DROP ME A
+        ENTRE EM
         <br />
-        MESSAGE.
+        CONTATO.
       </motion.h2>
 
       <motion.div
@@ -31,7 +31,7 @@ const ContactSection = () => {
           href="mailto:contato@eversonalcantara.com"
           className="inline-flex items-center justify-center border border-foreground text-foreground px-8 py-3 text-xs font-medium uppercase tracking-[0.2em] hover:bg-foreground hover:text-background transition-colors duration-200 rounded-sm"
         >
-          Email Me
+          Enviar E-mail
         </a>
 
         <div className="flex flex-col divide-y divide-border pt-8">

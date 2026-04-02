@@ -20,7 +20,7 @@ const WorkSection = () => {
         viewport={{ once: true }}
         className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-12"
       >
-        Selected Work
+        Projetos Selecionados
       </motion.h2>
 
       <div className="grid md:grid-cols-2 gap-6">

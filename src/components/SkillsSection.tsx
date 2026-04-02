@@ -27,7 +27,7 @@ const SkillsSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-8">
-            Skills
+            Habilidades
           </h2>
           <ul className="divide-y divide-border">
             {skills.map((skill) => (
@@ -45,7 +45,7 @@ const SkillsSection = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
         >
           <h2 className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-8">
-            Expertise Segments
+            Frentes de Experiência
           </h2>
           <ul className="divide-y divide-border">
             {segments.map((seg) => (
